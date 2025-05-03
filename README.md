@@ -1,6 +1,6 @@
 # web_site_file_upload_download
 
-#!!!ŞUANDA GELİŞİM AŞAMASINDADIR VE BU SEBEPLE GÜVENLİK AÇIKLIKLARI MEVCUTTUR!!!
+# !!!ŞUANDA GELİŞİM AŞAMASINDADIR VE BU SEBEPLE GÜVENLİK AÇIKLIKLARI MEVCUTTUR!!!
 
 # Dosya Yükleme Sistemi
 
