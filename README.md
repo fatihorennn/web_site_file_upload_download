@@ -27,10 +27,15 @@ Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebil
 ## 📁 Proje Yapısı
 dosya_yukle/
 ├── mainpage.html
+
 ├── login.html / register.html / uploadpage.html
+
 ├── style.css / script.js
+
 ├── db.php / auth_check.php / login.php / logout.php / register.php / upload.php
+
 ├── yuklenenler/ # Yüklenen dosyaların tutulduğu klasör
+
 ├── jpg-folder/ # Görsel dosyalar (arka plan vs.)
 
 ## ⚙️ Kurulum ve Kullanım
