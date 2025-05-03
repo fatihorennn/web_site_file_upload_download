@@ -26,6 +26,7 @@ Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebil
 
 ## 📁 Proje Yapısı
 dosya_yukle/
+
 ├── mainpage.html
 
 ├── login.html / register.html / uploadpage.html
