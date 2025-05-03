@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag & Drop Dosya Yükle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Dosya Yükleme Alanı</h2>
+
+  <div id="drop-area">
+    <p>Dosyanızı buraya sürükleyin</p>
+    <button id="browse-btn">Dosya Seç</button>
+    <input type="file" id="fileElem" name="yuklenen_dosya" accept="image/*,.pdf,.txt,.doc,.docx">
+  </div>
+
+  <div id="preview"></div>
+  <div id="upload-status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

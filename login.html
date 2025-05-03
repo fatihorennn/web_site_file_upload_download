@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Giriş Yap</h2>
+
+    <form id="loginForm">
+      <label for="username">Kullanıcı Adı:</label>
+      <input type="text" name="username" required>
+
+      <label for="password">Şifre:</label>
+      <input type="password" name="password" required>
+
+      <input type="submit" value="Giriş Yap">
+    </form>
+
+    <p>Hesabınız yok mu? <a href="register.html">Kayıt Ol</a></p>
+    <div id="loginMessage"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const msg = document.getElementById("loginMessage");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      fetch("login.php", {
+        method: "POST",
+        body: formData
+      })
+      .then(res => res.text())
+      .then(data => {
+        if (data.trim() === "success") {
+          window.location.href = "uploadpage.html"; 
+        } else {
+          msg.innerHTML = "<p style='color:red'>" + data + "</p>";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
