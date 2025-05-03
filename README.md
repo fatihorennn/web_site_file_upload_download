@@ -1,5 +1,7 @@
 # web_site_file_upload_download
 
+#!!!ŞUANDA GELİŞİM AŞAMASINDADIR VE BU SEBEPLE GÜVENLİK AÇIKLIKLARI MEVCUTTUR!!!
+
 # Dosya Yükleme Sistemi
 
 Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebildiği basit bir web tabanlı dosya yönetim sistemidir. Proje, öğrenme ve kişisel gelişim amacıyla PHP, JavaScript ve HTML/CSS teknolojileri kullanılarak geliştirilmiştir.
