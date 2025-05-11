@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Giriş Yap</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -16,6 +17,9 @@
 
       <label for="password">Şifre:</label>
       <input type="password" name="password" required>
+
+      <!-- reCAPTCHA kutusu -->
+      <div class="g-recaptcha" data-sitekey="6LcfZzErAAAAAKWI-52VxawWCOqzfSTOOEJbbQUc"></div>
 
       <input type="submit" value="Giriş Yap">
     </form>
@@ -32,6 +36,14 @@
       e.preventDefault();
 
       const formData = new FormData(form);
+      const token = grecaptcha.getResponse();  // reCAPTCHA token'ı
+
+      if (!token) {
+        msg.innerHTML = "<p style='color:red'>Lütfen robot olmadığınızı doğrulayın.</p>";
+        return;
+      }
+
+      formData.append("g-recaptcha-response", token);  // sunucuya gönder
 
       fetch("login.php", {
         method: "POST",
@@ -43,6 +55,7 @@
           window.location.href = "dashboard.php"; 
         } else {
           msg.innerHTML = "<p style='color:red'>" + data + "</p>";
+          grecaptcha.reset();  // başarısızsa reCAPTCHA'yı sıfırla
         }
       });
     });

@@ -1,7 +1,5 @@
 # web_site_file_upload_download
 
-# !!!ŞUANDA GELİŞİM AŞAMASINDADIR VE BU SEBEPLE GÜVENLİK AÇIKLIKLARI MEVCUTTUR!!!
-
 # Dosya Yükleme Sistemi
 
 Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebildiği basit bir web tabanlı dosya yönetim sistemidir. Proje, öğrenme ve kişisel gelişim amacıyla PHP, JavaScript ve HTML/CSS teknolojileri kullanılarak geliştirilmiştir.
@@ -26,17 +24,11 @@ Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebil
 
 ## 📁 Proje Yapısı
 dosya_yukle/
-
 ├── mainpage.html
-
 ├── login.html / register.html / uploadpage.html
-
 ├── style.css / script.js
-
 ├── db.php / auth_check.php / login.php / logout.php / register.php / upload.php
-
 ├── yuklenenler/ # Yüklenen dosyaların tutulduğu klasör
-
 ├── jpg-folder/ # Görsel dosyalar (arka plan vs.)
 
 ## ⚙️ Kurulum ve Kullanım
