@@ -24,11 +24,17 @@ Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebil
 
 ## 📁 Proje Yapısı
 dosya_yukle/
+
 ├── mainpage.html
+
 ├── login.html / register.html / uploadpage.html
+
 ├── style.css / script.js
+
 ├── db.php / auth_check.php / login.php / logout.php / register.php / upload.php
+
 ├── yuklenenler/ # Yüklenen dosyaların tutulduğu klasör
+
 ├── jpg-folder/ # Görsel dosyalar (arka plan vs.)
 
 ## ⚙️ Kurulum ve Kullanım
@@ -36,5 +42,7 @@ dosya_yukle/
 1. Proje klasörünü yerel sunucuna (XAMPP / WAMP / LAMP) kopyala.
 2. `dosya_yukle.sql` dosyasını MySQL veritabanına içe aktar.
 3. `db.php` içinde veritabanı erişim bilgilerini düzenle.
-4. Tarayıcında `http://localhost/dosya_yukle/mainpage.html` adresini aç.
-5. Kayıt ol ve ardından giriş yaparak dosya yüklemeyi test et.
+4. `login.php`, `register.php` dosyalaarının içindeki "secret-key" kısmını "https://www.google.com/recaptcha/admin/" kısmından aldığınız ID ile değiştirin.
+5.  `login.html`, `register.html` dosyalarına site-key kısmını site keyiniz ile değiştirin.
+6. Tarayıcında `http://localhost/dosya_yukle/mainpage.html` adresini aç.
+7. Kayıt ol ve ardından giriş yaparak dosya yüklemeyi test et.
