@@ -2,7 +2,7 @@
 session_start();
 require 'db.php';
 
-$recaptcha_secret = "6LcfZzErAAAAAGufPLxrYZWO4Ja1t5S-gfpsfKmd";
+$recaptcha_secret = "secret-key";
 $response = $_POST['g-recaptcha-response'] ?? '';
 $remoteip = $_SERVER['REMOTE_ADDR'];
 
