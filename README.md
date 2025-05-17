@@ -42,7 +42,7 @@ dosya_yukle/
 1. Proje klasörünü yerel sunucuna (XAMPP / WAMP / LAMP) kopyala.
 2. `dosya_yukle.sql` dosyasını MySQL veritabanına içe aktar.
 3. `db.php` içinde veritabanı erişim bilgilerini düzenle.
-4. `login.php`, `register.php` dosyalaarının içindeki "secret-key" kısmını "https://www.google.com/recaptcha/admin/" kısmından aldığınız ID ile değiştirin.
-5.  `login.html`, `register.html` dosyalarına site-key kısmını site keyiniz ile değiştirin.
+4. `login.php`, `register.php` dosyalaarının içindeki "secret-key" kısmını "https://www.google.com/recaptcha/admin/" kısmından aldığınız "secret-key" ile değiştirin.
+5.  `login.html`, `register.html` dosyalarına site-key kısmını "https://www.google.com/recaptcha/admin/" kısmından aldığınız "site-key" ile değiştirin.
 6. Tarayıcında `http://localhost/dosya_yukle/mainpage.html` adresini aç.
 7. Kayıt ol ve ardından giriş yaparak dosya yüklemeyi test et.
