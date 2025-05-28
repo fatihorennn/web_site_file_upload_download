@@ -2,7 +2,8 @@
 
 # Dosya Yükleme Sistemi
 
-Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebildiği basit bir web tabanlı dosya yönetim sistemidir. Proje, öğrenme ve kişisel gelişim amacıyla PHP, JavaScript ve HTML/CSS teknolojileri kullanılarak geliştirilmiştir.
+Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebildiği basit bir web tabanlı dosya yönetim sistemidir. 
+Proje, öğrenme ve kişisel gelişim amacıyla PHP, JavaScript ve HTML/CSS teknolojileri kullanılarak geliştirilmiştir.
 
 ## 🚀 Özellikler
 
@@ -40,7 +41,7 @@ dosya_yukle/
 ## ⚙️ Kurulum ve Kullanım
 
 1. Proje klasörünü yerel sunucuna (XAMPP / WAMP / LAMP) kopyala.
-2. `dosya_yukle.sql` dosyasını MySQL veritabanına içe aktar.
+2. `SQL` klasörü içindeki `dosya_yukle.sql` dosyasını MySQL veritabanına içe aktar.
 3. `db.php` içinde veritabanı erişim bilgilerini düzenle.
 4. `login.php`, `register.php` dosyalaarının içindeki "secret-key" kısmını "https://www.google.com/recaptcha/admin/" kısmından aldığınız ID ile değiştirin.
 5.  `login.html`, `register.html` dosyalarına site-key kısmını site keyiniz ile değiştirin.
