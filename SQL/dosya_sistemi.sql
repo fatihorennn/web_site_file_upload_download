@@ -48,15 +48,16 @@ CREATE TABLE `users` (
   `twofa_code` varchar(6) DEFAULT NULL,
   `twofa_expires` datetime DEFAULT NULL,
   `is_verified` tinyint(4) DEFAULT 0,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `role` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Tablo döküm verisi `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `twofa_code`, `twofa_expires`, `is_verified`, `created_at`) VALUES
-(1, 'qwe', 'qwe@mail.com', '$2y$10$W3flbUpDHhqlRpGu6D75HepiHDBkpWj2m7E0MWP8HTlJoo6XXlrFm', '337034', '2025-05-27 20:39:02', 0, '2025-05-27 18:34:02');
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `twofa_code`, `twofa_expires`, `is_verified`, `created_at`,`role`) VALUES
+(1, 'qwe', 'qwe@mail.com', '$2y$10$W3flbUpDHhqlRpGu6D75HepiHDBkpWj2m7E0MWP8HTlJoo6XXlrFm', '337034', '2025-05-27 20:39:02', 0, '2025-05-27 18:34:02',`low_user`);
 
 --
 -- Dökümü yapılmış tablolar için indeksler

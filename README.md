@@ -1,5 +1,7 @@
 # web_site_file_upload_download
 
+NOT:login.php dosyasına 2FA doğrulaması koyulmadı.
+
 # Dosya Yükleme Sistemi
 
 Bu proje, kullanıcıların oturum açarak çeşitli türlerde dosya yükleyebildiği basit bir web tabanlı dosya yönetim sistemidir. 
