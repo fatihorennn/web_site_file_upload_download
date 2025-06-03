@@ -4,9 +4,9 @@ session_start();
 require_once "db.php";
 // PHPMailer için
 
-require 'PHPmailer/src/PHPMailer.php';
-require 'PHPmailer/src/SMTP.php';
-require 'PHPmailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
