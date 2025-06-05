@@ -24,7 +24,7 @@ Proje, öğrenme ve kişisel gelişim amacıyla PHP, JavaScript ve HTML/CSS tekn
 - Apache
 
 ## 📁 Proje Yapısı
-dosya_yukle/
+web_site_file_upload_download/
 
 ├── mainpage.html
 
