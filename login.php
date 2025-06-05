@@ -2,7 +2,7 @@
 session_start();
 require 'db.php';
 
-$recaptcha_secret = "secret-key";
+$recaptcha_secret = "YOUR_SECRET_KEY";               //CHANGE THİS LİNE
 $response = $_POST['g-recaptcha-response'] ?? '';
 $remoteip = $_SERVER['REMOTE_ADDR'];
 
@@ -23,6 +23,13 @@ $stmt->execute([$username]);
 $user = $stmt->fetch();
 
 if ($user && password_verify($password, $user['password'])) {
+
+    if ($user["is_verified"] == 0) {
+                echo "Hesabınız henüz doğrulanmamış. Lütfen e-posta adresinize gelen kod ile doğrulayın.";
+                header("Location: register.php");
+                exit;
+            }
+
     $_SESSION['username'] = $user['username'];
     $_SESSION['user_id'] = $user['id'];  // dosya yüklemede lazım
     $_SESSION['role'] = $user['role'];
